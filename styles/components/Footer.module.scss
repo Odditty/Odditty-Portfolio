@@ -1,0 +1,33 @@
+.footer {
+  padding: 40px 0;
+  .container {
+    border-top: 2px solid var(--primary);
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    .social__links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      a {
+      }
+    }
+    .top__scroll__btn {
+      position: relative;
+      //   height: 100px;
+      //   width: 100px;
+      img {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+      }
+    }
+  }
+}

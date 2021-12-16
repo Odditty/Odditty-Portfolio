@@ -1,0 +1,12 @@
+body,
+body[data-theme="light"] {
+  $color-text: #2c2c2c;
+  $primary: #227c9d;
+  $bg-primary: #fff;
+}
+
+body[data-theme="dark"] {
+  $color-text: #fff;
+  $primary: #227c9d;
+  $bg-primary: #2c2c2c;
+}

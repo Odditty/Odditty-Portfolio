@@ -1,0 +1,49 @@
+.header {
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  // .logo {
+  // }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    li {
+      a {
+        font-size: 1.2rem;
+        position: relative;
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: "";
+          height: 2px;
+          width: 100%;
+          transform: scaleX(0);
+          transform-origin: right center;
+          background: var(--color-text);
+          transition: transform 0.3s linear;
+        }
+        &:hover {
+          &::after {
+            transform: scaleX(1);
+            transform-origin: center left;
+          }
+        }
+      }
+    }
+  }
+  .theme__toggle__btn {
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

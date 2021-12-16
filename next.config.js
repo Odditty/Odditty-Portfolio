@@ -1,3 +1,9 @@
+const path = require("path");
+const withSass = require("@zeit/next-sass");
+
 module.exports = {
-  reactStrictMode: true,
-}
+  /* Add Your Scss File Folder Path Here */
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
+  },
+};
