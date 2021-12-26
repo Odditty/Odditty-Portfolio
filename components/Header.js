@@ -71,6 +71,7 @@ function Header() {
 
   useEffect(() => {
     isOpen ? setIsOpen(false) : setIsOpen(true);
+    handleHamToggle();
   }, [router.pathname]);
 
   useEffect(() => {
