@@ -3,11 +3,13 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import styles from "../styles/components/Header.module.scss";
+import { useRouter } from "next/router";
 
 function Header() {
   const [theme, setTheme] = useState("light");
   const [isOpen, setIsOpen] = useState(false);
   const [isNavScroll, setNavScroll] = useState(false);
+  let router = useRouter();
 
   let navLinkRef = useRef(null);
   let navLinksRef = useRef(null);
@@ -57,12 +59,16 @@ function Header() {
       });
     }
 
-    console.log(navLinksRef.children);
+    // console.log(navLinksRef.children);
   }, [isOpen]);
 
   useEffect(() => {
     document.body.dataset.theme = theme;
   }, [theme]);
+
+  useEffect(() => {
+    isOpen ? setIsOpen(false) : setIsOpen(true);
+  }, [router.pathname]);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
