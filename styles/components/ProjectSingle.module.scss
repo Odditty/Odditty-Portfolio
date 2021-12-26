@@ -1,6 +1,9 @@
 .single__project__link {
   width: 40%;
   margin-bottom: 100px;
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
   .single__project__bg {
     background-size: 100% !important;
     background-position: center !important;
@@ -11,6 +14,9 @@
     overflow: hidden;
     border-radius: 10px;
     transition: background 1s ease-out;
+    @media screen and (max-width: 850px) {
+      background-size: cover !important;
+    }
     // &::after {
     //   position: absolute;
     //   content: "";
@@ -48,6 +54,9 @@
       right: 0;
       z-index: 2;
       transition: all 0.3s linear;
+      @media screen and (max-width: 700px) {
+        transform: translateY(0);
+      }
       :nth-child(1) {
         font-size: 1.15rem;
       }

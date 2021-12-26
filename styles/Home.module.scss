@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 100px;
+  margin-top: 10vh;
   @media screen and (max-width: 800px) {
     flex-direction: column;
     align-items: center;
@@ -77,10 +77,11 @@
 }
 
 .about__section {
-  margin: 10% 0;
+  margin: 6rem 0;
   position: relative;
+  overflow: hidden;
   p {
-    font-size: clamp(2rem, 4vw, 6rem);
+    font-size: clamp(1.5rem, 4vw, 6rem);
     span {
       color: var(--primary);
     }
@@ -162,7 +163,7 @@
 }
 
 .client__section {
-  margin: 8% 0;
+  margin: 6rem 0;
   h2 {
     font-size: clamp(2rem, 4vw, 5rem);
     text-align: center;
@@ -185,10 +186,14 @@
 }
 
 .about__us__section {
+  margin: 6rem 0;
   p {
     font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: 600;
     width: 80%;
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
   }
   a {
     color: var(--primary);
@@ -198,7 +203,7 @@
 }
 
 .home__footer__section {
-  margin-top: 8%;
+  margin-top: 8rem;
   min-height: 40vh;
   h3 {
     font-size: clamp(2rem, 5vw, 6rem);

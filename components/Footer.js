@@ -13,16 +13,60 @@ function Footer() {
         </div>
         <div className={styles.social__links}>
           <Link href="www.google.com">
-            <a>Facebook</a>
+            <a>
+              <span>Facebook</span>
+              <span>
+                <Image
+                  src="/images/icons/facebook-icon.svg"
+                  width={30}
+                  height={30}
+                  layout="intrinsic"
+                  alt="facebook-icon"
+                />
+              </span>
+            </a>
           </Link>
           <Link href="www.google.com">
-            <a>Instagram</a>
+            <a>
+              <span>Instagram</span>
+              <span>
+                <Image
+                  src="/images/icons/instagram-icon.svg"
+                  width={30}
+                  height={30}
+                  layout="intrinsic"
+                  alt="instagram-icon"
+                />
+              </span>
+            </a>
           </Link>
           <Link href="www.google.com">
-            <a>Linkedin</a>
+            <a>
+              <span>Linkedin</span>
+              <span>
+                <Image
+                  src="/images/icons/linkedin-icon.svg"
+                  width={30}
+                  height={30}
+                  layout="intrinsic"
+                  alt="linkedin-icon"
+                />
+              </span>
+            </a>
           </Link>
           <Link href="www.google.com">
-            <a>Dribble</a>
+            <a>
+              <span>Dribble</span>
+              <span>
+                <Image
+                  src="/images/icons/dribble-icon.svg"
+                  width={30}
+                  height={30}
+                  layout="intrinsic"
+                  alt="dribble-icon"
+                />
+              </span>
+            </a>
           </Link>
         </div>
         <div className={styles.top__scroll__btn}>
