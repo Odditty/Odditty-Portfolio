@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AboutPerson from "../components/About-Person";
 import AboutMembers from "../utils/aboutMembers";
+import HeadTag from "../components/HeadTag";
 
 function About() {
   var settings = {
@@ -72,6 +73,7 @@ function About() {
 
   return (
     <main>
+      <HeadTag title="About" />
       <div className={`${styles.about__page__main__container}  about__page`}>
         <section className={styles.hero__section}>
           <h1>

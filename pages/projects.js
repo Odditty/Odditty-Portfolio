@@ -1,5 +1,12 @@
+import HeadTag from "../components/HeadTag";
+
 function Projects() {
-  return <main>Projects</main>;
+  return (
+    <main>
+      <HeadTag title="Project" />
+      Projects
+    </main>
+  );
 }
 
 export default Projects;

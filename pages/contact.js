@@ -1,10 +1,12 @@
 import styles from "../styles/Contact.module.scss";
 //import { ReactComponent as ContactIllus } from "../public/images/contact-illustration.svg";
 import ContactIllus from "../components/Illustrations";
+import HeadTag from "../components/HeadTag";
 
 function Contact() {
   return (
     <main>
+      <HeadTag title="Contact Us" />
       <div className={`${styles.contact__page} container`}>
         <div className={styles.contact__hero}>
           <div className={styles.hero__head}>

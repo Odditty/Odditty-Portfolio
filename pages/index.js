@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeadTag from "../components/HeadTag";
 import ProjectSingle from "../components/ProjectSingle";
 import styles from "../styles/Home.module.scss";
 import ClientLists from "../utils/clientList";
@@ -8,6 +9,7 @@ import ProjectList from "../utils/projectList";
 export default function Home() {
   return (
     <main>
+      <HeadTag />
       <div className="container">
         <section className={styles.hero__section}>
           <div className={styles.left__illus}>
