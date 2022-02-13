@@ -119,7 +119,7 @@ function Header() {
     });
   }, []);
 
-  console.log(isOpen, router.pathname);
+  //console.log(isOpen, router.pathname);
 
   return (
     <header className={styles.header}>
